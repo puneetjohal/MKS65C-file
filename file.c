@@ -3,9 +3,9 @@
 
 int main(){
   //open test
-  int retIntFoo = open("foo.txt");
+  int retIntFoo = open("foo.txt", O_RDONLY);
   printf("--- Open Test ---\nint returned when opening foo = %d\n", retIntFoo);
-  int retIntWoo = open("woo.txt");
+  int retIntWoo = open("woo.txt", O_WRONLY);
   printf("int returned when opening woo = %d\n\n", retIntWoo);
 
   //read test
