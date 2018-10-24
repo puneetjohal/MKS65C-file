@@ -7,7 +7,7 @@ int main(){
   printf("--- Open Test ---\nint returned when opening foo = %d\n", retIntFoo);
   int retIntWoo = open("woo.txt", O_WRONLY); //write only
   printf("int returned when opening woo = %d\n", retIntWoo);
-  int retIntMoo = open("moo.txt", O_RDWR | O_CREAT) //read and write, create
+  int retIntMoo = open("moo.txt", O_RDWR | O_CREAT); //read and write, create
   printf("int returned when creating and opening moo = %d\n\n", retIntMoo);
 
   //read test
