@@ -21,7 +21,7 @@ int main(){
   printf("--- Close Test ----\nint returned when closing foo = %d\n", retIntFoo);
   retIntWoo = close(retIntWoo);
   printf("int returned when closing woo = %d\n", retIntWoo);
-  retIntFoo = close(retIntMoo);
+  retIntMoo = close(retIntMoo);
   printf("int returned when closing moo = %d\n\n", retIntMoo);
 
   return 0;
